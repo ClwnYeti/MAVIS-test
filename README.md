@@ -1,6 +1,8 @@
-This is a Kotlin Multiplatform project targeting Server.
+Тестовое задание для компании МАВИС
 
-* [/server](./server/src/main/kotlin) is for the Ktor server application.
+Для запуска файл с main mavis.task.MavisTestApplication
 
+Начальные настройки для симулятора и других частей программы mavis/task/util/ServerSettings.kt
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+Необходимое jdk 17
+
