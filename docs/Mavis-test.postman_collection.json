@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "d6e22737-016f-487f-a62b-0b50a99b34bf",
+		"name": "Mavis-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7115094"
+	},
+	"item": [
+		{
+			"name": "config",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hamsterCount\": 15,\r\n    \"sensorCount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/simulator/config"
+			},
+			"response": []
+		},
+		{
+			"name": "events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"0\",\r\n    \"type\": \"HamsterEnter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/simulator/events"
+			},
+			"response": []
+		},
+		{
+			"name": "report",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"0\",\r\n    \"type\": \"HamsterEnter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/report/daily?date=2025-08-24",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2025-08-24"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
